@@ -1,0 +1,107 @@
+.carousel {
+    padding: 100px 0;
+}
+
+.carousel .slick-dots {
+    display: none !important;
+}
+
+.carousel .slick-slide div {
+    padding: 0 15px;
+}
+
+.carousel .card {
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    display: flex !important;
+    column-gap: 30px;
+    padding: 5px 20px;
+}
+
+.carousel .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel .card-body span {
+    font-weight: 500;
+}
+
+.carousel .card-body .description {
+    color: #868686;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.carousel .card-body span {
+    color: #333;
+    font-size: 12px;
+}
+
+.carousel .card img {
+    width: 200px;
+    border-radius: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.carousel .slick-slider {
+    position: relative;
+}
+
+.carousel .slick-slider .slick-next,
+.carousel .slick-slider .slick-prev {
+    right: 0;
+    border-radius: 50%;
+    z-index: 11111;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: inherit;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.carousel .slick-slider .slick-prev {
+    left: 0;
+}
+
+.carousel .slick-slider .slick-next:hover {
+    background-color: #4b9e22;
+}
+
+.carousel .slick-slider .slick-next:hover .carousel .slick-slider .slick-next::before {
+    color: #fff;
+}
+
+.carousel .slick-slider .slick-prev:hover {
+    background-color: #4b9e22;
+}
+
+.carousel .slick-slider .slick-next::before {
+    color: #000;
+    font-family: inherit;
+}
+
+.carousel .slick-slider .slick-prev::before {
+    color: #000;
+    font-family: inherit;
+}
+
+@media screen and (max-width: 1024px) {
+    .carousel .card img {
+        width: 120px;
+    }
+
+    .carousel .card {
+        column-gap: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel .slick-slide div {
+        padding: 0;
+    }
+}

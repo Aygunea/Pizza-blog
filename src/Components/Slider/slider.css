@@ -1,0 +1,126 @@
+.slider-title {
+    color: #fff;
+    font-size: 70px;
+}
+
+.slider-title a {
+    color: #0fb78d;
+    margin-left: 15px;
+}
+
+.slide-context {
+    height: 98vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.slide-context h3 {
+    width: 80%;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.small-title {
+    letter-spacing: 2px;
+}
+
+.slide-text {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slide-text button {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 45px;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: .4s;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.slide-text button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.slide1 {
+    background-image: url(../../assets/images/s1.webp);
+}
+
+.slide2 {
+    background-image: url(../../assets/images/s2.webp);
+}
+
+.slider .ant-carousel .slick-dots li button {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #666;
+}
+
+.slider .ant-carousel .slick-dots li.slick-active button {
+    width: 15px;
+}
+
+.slider .ant-carousel .slick-dots {
+    padding: 30px 0;
+}
+
+.slider .slick-dots li button::before {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .slide-text {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .slide-text button {
+        font-size: 12px;
+        padding: 15px 30px;
+    }
+
+    .slider-title {
+        font-size: 36px;
+    }
+
+    .slide-context {
+        background-position: center;
+    }
+
+    .slide-text {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .slide-context h3 {
+        font-size: 18px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .slider-title {
+        font-size: 24px;
+    }
+
+    .slide-context h3 {
+        font-size: 12px;
+    }
+
+    .slide-context {
+        height: 150vh;
+    }
+}

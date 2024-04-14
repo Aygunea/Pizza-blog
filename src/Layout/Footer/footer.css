@@ -1,0 +1,120 @@
+.footer-head{
+    margin: 50px 0;
+}
+footer{
+    margin-top: 100px;
+}
+footer .logo{
+    width: 200px;
+}
+footer .copyright {
+    width: 100%;
+   display: flex;
+   padding: 25px 0;
+   justify-content: space-between;
+   border-top: 1px solid #eaeaea;
+   font-size: 12px;
+}
+.info-footer-end{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.info-footer-end p{
+    font-size: 12px;
+    width: 60%;
+    line-height: 18px;
+}
+.social-icons{
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+}
+footer h4 {
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    padding: 5px;
+}
+
+footer ul li a {
+    color: #000;
+    cursor: pointer;
+}
+
+footer input {
+    border: 1px solid #000;
+    width: 100%;
+    font-size: 12px;
+    display: inline-block;
+    padding: 15px 10px;
+    outline: none;
+}
+.footer-line{
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+}
+
+footer button {
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 12px;
+    background-color: #000;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@media screen and (max-width:1100px) {
+    footer ul {
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width:576px) {
+    .copyright img{
+        width: 100px;
+    }
+    .copyright p{
+        font-size: 8px;
+    }
+    .footer-head .ant-col{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    footer ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer-title {
+        font-size: 16px;
+    }
+    footer button {
+        padding: 15px;
+    }
+
+    footer ul li a {
+        font-size: 12px;
+    }
+    footer .copyright {
+        font-size: 10px;
+    }
+    .info-footer-end{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,152 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1111;
+}
+
+.modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+    padding: 40px 100px;
+    border: 2px solid #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-header {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    font-size: 35px;
+}
+
+.modal-content {
+    width: 80%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.modal-content h1 {
+    font-size: 30px;
+}
+
+.modal-content #brownline {
+    width: 68px;
+    height: 2px;
+    display: inline-block;
+    background-color: #bc9e6b;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    font-size: 15px;
+    height: 55px;
+}
+
+.form-group input {
+    border: 1px solid #dfdfdf;
+    line-height: 55px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.form-group button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: .3s;
+}
+
+.form-group button:hover {
+    background-color: #bc9e6b;
+}
+
+.modal-content a {
+    color: #000;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .modal-content h1 {
+        font-size: 20px;
+    }
+    .modal-content{
+        gap: 15px;
+    }
+
+    .modal-window {
+        padding: 10px 0;
+    }
+
+    .form-group button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-group {
+        font-size: 10px !important;
+    }
+
+    .modal {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .modal-content h1 {
+        font-size: 14px;
+    }
+    .modal-content h3{
+        font-size: 12px;
+    }
+    .modal-content p{
+        font-size: 10px;
+    }
+    .modal-header{
+        right: 30px;
+        top: 30px;
+    }
+    .form-group{
+        height: 35px;
+        font-size: 6px;
+
+    }
+    .form-group button{
+        font-size: 8px;
+    }
+    .modal-content a{
+        font-size: 10px;
+    }
+}

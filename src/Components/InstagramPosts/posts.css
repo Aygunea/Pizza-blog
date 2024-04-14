@@ -1,0 +1,125 @@
+.posts {
+    margin: 100px 0;
+}
+
+.posts img {
+    width: 100%;
+    transition: 2s;
+}
+
+.posts .card:hover img {
+    width: 100%;
+    transform: scale(1.3);
+}
+
+.posts .card {
+    padding: 0 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay-post {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: .4s;
+    pointer-events: none;
+}
+.overlay-post svg{
+    transition: .4s;
+}
+.overlay-post svg:hover {
+    color: #4b9e22;
+}
+
+.posts .card:hover .overlay-post {
+    opacity: 1;
+    pointer-events: auto;
+}
+.posts .slick-dots{
+    display: none !important;
+}
+
+.section-caption .instagram-desc {
+    color: #4b9e22;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.posts .slick-slider {
+    position: relative;
+}
+
+.posts .slick-slider:hover .slick-arrow {
+    opacity: 1;
+}
+
+.posts .slick-slider:hover .slick-prev {
+    left: 20px;
+}
+
+.posts .slick-slider:hover .slick-next {
+    right: 20px;
+}
+
+.posts .slick-arrow {
+    transition: .5s;
+    opacity: 0;
+}
+
+.posts .slick-slider .slick-next,
+.posts .slick-slider .slick-prev {
+    right: 50px;
+    border-radius: 50%;
+    z-index: 1111;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: inherit;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.posts .slick-slider .slick-prev {
+    left: 50px;
+}
+
+.posts .slick-slider .slick-next:hover {
+    background-color: #4b9e22;
+}
+
+.posts .slick-slider .slick-prev:hover .posts .slick-slider .slick-prev:before {
+    color: #fff !important;
+}
+
+.posts .slick-slider .slick-prev:hover {
+    background-color: #4b9e22;
+}
+
+.posts .slick-slider .slick-next::before {
+    color: #4b9e22;
+    font-family: inherit;
+}
+
+.posts .slick-slider .slick-prev::before {
+    color: #4b9e22;
+    font-family: inherit;
+}
