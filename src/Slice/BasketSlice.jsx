@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// LocalStorage'dan mevcut sepet verilerini al
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 export const BasketSlice = createSlice({
