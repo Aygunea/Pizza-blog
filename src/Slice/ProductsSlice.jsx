@@ -14,7 +14,7 @@ export const addCategory = createAsyncThunk('products/addCategory', async (newCa
 });
 
 export const editCategory = createAsyncThunk('products/editCategory', async ({ id, category }) => {
-    const response = await axios.put(`${apiUrl}/${id}`, category);
+    await axios.put(`${apiUrl}/${id}`, category);
     return { id, category }
 });
 
@@ -73,8 +73,6 @@ const CategorySlice = createSlice({
                 let index = state.items.findIndex(item => item.id == action.payload.id);
                 if (index != -1) {
                     state.items[index] = action.payload.category
-                    // let editItem=state.items[index]
-                    // state.items = [...state.items, editItem]
                 }
             })
 

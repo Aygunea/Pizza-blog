@@ -3,7 +3,7 @@ import './cart.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCategories } from '../../Slice/ProductsSlice';
 import { addBasket, decrease, removeBasket } from '../../Slice/BasketSlice';
-import { Button, Col, Input, Row } from 'antd';
+import { Col, Input, Row } from 'antd';
 import { Link } from 'react-router-dom';
 import { IoMdClose } from "react-icons/io";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
@@ -12,7 +12,6 @@ const Cart = () => {
   const dispatch = useDispatch();
   const basket = useSelector(state => state.basket.items);
   const totalPrice = useSelector(state => state.basket.totalPrice.toFixed(2));
-
 
   useEffect(() => {
     dispatch(fetchCategories());

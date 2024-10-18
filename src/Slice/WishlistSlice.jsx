@@ -10,8 +10,8 @@ export const WishlistSlice = createSlice({
     reducers: {
         addWishlist: (state, action) => {
             const { id } = action.payload;
-            const existingIndex = state.items.findIndex(item => item.id === id);
-            if (existingIndex > -1) {
+            const item = state.items.some(item => item.id === id);
+            if (item) {
                 state.items.splice(existingIndex, 1)
             } else {
                 const newItem = { ...action.payload };
